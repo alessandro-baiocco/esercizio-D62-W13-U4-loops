@@ -15,23 +15,23 @@ public class Esercizio2switch {
 
         System.out.println("inserire un valore");
 
-        int val1Es2 = Integer.parseInt(input.nextLine());
+        String val1Es2 = input.nextLine();
 
         switch (val1Es2){
-            case 0:{
+            case "0":{
                 return "il valore è 0";
             }
-            case 1:{
+            case "1":{
                 return "il valore è 1";
             }
-            case 2:{
+            case "2":{
                 return "il valore è 2";
             }
-            case 3:{
+            case "3":{
                 return "il valore è 3";
             }
             default:{
-                return "il valore dato non è compreso tra 0 e 3 o non è un numero";
+                return "il valore dato non è compreso tra 0 e 3 oppure non è un numero";
             }
         }
     }

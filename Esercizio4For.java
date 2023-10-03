@@ -15,11 +15,15 @@ private static void esercizio4(Scanner input){
 
     System.out.println("inserire un numero");
 
+
+        if(input.hasNextInt()){
         int num1Es4 = Math.abs(Integer.parseInt(input.nextLine()));
+                for(int i = num1Es4; i >= 0 ; i--){
+                    System.out.println(i);
+                }
+                }else{
+                    System.out.println("non è un numero");
 
-        for(int i = num1Es4; i >= 0 ; i--){
-            System.out.println(i);
+                }
+            }
         }
-
-}
-}

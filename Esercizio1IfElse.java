@@ -3,66 +3,68 @@ import java.util.Scanner;
 
 public class Esercizio1IfElse {
 
-   public static void main(String[] args){
-       Scanner input = new Scanner(System.in);
-       esercizio1a(input);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        esercizio1a(input);
 
-       System.out.println("-----------------------");
+        System.out.println("-----------------------");
 
-       esercizio1b(input);
+        esercizio1b(input);
 
-
-       input.close();
-
-
-   }
+        input.close();
 
 
+    }
 
-   private static void esercizio1a(Scanner input){
 
-       System.out.println("inserire un numero");
+    private static void esercizio1a(Scanner input) {
 
-       String str1Es1a = input.nextLine();
+        System.out.println("inserire un numero");
 
-       System.out.println(stringaPariDispari(str1Es1a));
-   }
+        String str1Es1a = input.nextLine();
+
+        System.out.println(stringaPariDispari(str1Es1a));
+    }
 
 
 
 
     /* ------------------------------------------------*/
 
-   private static boolean stringaPariDispari(String a){
+    private static boolean stringaPariDispari(String a) {
 
-       int val1Es1a = Integer.parseInt(a);
+        int val1Es1a = Integer.parseInt(a);
 
-       if(val1Es1a % 2 == 0){
-           return true;
-       }else {
-           return false;
-       }
-   }
+        if (val1Es1a % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-/*------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------*/
 
-    private static void esercizio1b(Scanner input){
+    private static void esercizio1b(Scanner input) {
 
         System.out.println("inserisci un'anno per vedere se bisestile");
 
-        int val1Es1b = input.nextInt();
 
-        System.out.println(annoBisestile(val1Es1b));
+        if (input.hasNextInt()) {
+            int val1Es1b = input.nextInt();
+            System.out.println(annoBisestile(val1Es1b));
+        } else {
+            System.out.println("non è un numero");
 
+        }
     }
 
-    private static boolean annoBisestile(int a){
+    private static boolean annoBisestile(int a) {
 
-     if(a % 4 == 0  || a % 100 == 0 && a % 400 == 0){
-        return true;
-     }else{
-        return false;
-     }
+        if (a % 4 == 0 || (a % 100 == 0 && a % 400 == 0)) {
+            return true;
+        } else {
+            return false;
+        }
 
-}
+    }
 }
