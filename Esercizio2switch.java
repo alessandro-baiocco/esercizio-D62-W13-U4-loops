@@ -4,6 +4,7 @@ public class Esercizio2switch {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println(esercizio2(input));
+        input.close();
 
     }
 
