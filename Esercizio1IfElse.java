@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class esercizio1 {
+public class Esercizio1IfElse {
 
    public static void main(String[] args){
        Scanner input = new Scanner(System.in);
